@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+}
+
+#headText{
+    text-align: center;
+    margin: 10% auto;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#e60000, #990000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#search-area{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 50px;
+  font-size: 25px;
+}
+
+.button{
+  display: block;
+  margin: 20px auto;
+  background-color: white;
+  width: 30%;
+  height: 70px;
+  color: red;
+  font-size: 45px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+}
+
+.button:active{
+  font-size: 42px;
+}
+
+.generate-button{
+  display: block;
+  margin: 40px auto;
+  background-color: white;
+  width: 65%;
+  height: 200px;
+  color: red;
+  font-size: 45px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.generate-button:active{
+  font-size: 42px;
+}
+
+.info{
+  color: white;
+  width: 70%;
+  margin: 10px auto;
+
+}
+
+.main-info{
+  font-size: 34px;
+}
+
+.info img{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  border: 2px solid white;
+}
+
+.plot-info{
+  width: 85%;
+  color: white;
+  clear: both;
+  text-align: left;
+  margin: auto;
+  font-size: 30px;
+}
+
+.error{
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}

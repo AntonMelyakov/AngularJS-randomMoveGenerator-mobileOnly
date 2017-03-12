@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="newModule">
+  <head>
+    <meta charset="utf-8">
+    <title>Superheroe movies random generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="movies-list.js"></script>
+    <script type="text/javascript" src="main-js.js"></script>
+    <link rel="stylesheet" href="main-css.css">
+  </head>
+  <body ng-controller="MainCtrl">
+
+    <div class="header">
+      <h2 id="headText">random generaor for Superheroe movies</h2>
+    </div>
+
+    <div class="search">
+          <input type="text" ng-model="searchedMovie" id="search-area">
+          <span  class="button" ng-click="search(searchedMovie)">Search</span>
+        <div class="error">{{error}} </div>  
+    </div>
+
+    <div class="info" ng-show="movie">
+      <img src={{movie.Poster}} alt="N/A">
+      <div class="main-info">
+        <h2>{{movie.Title}}</h3>
+        <h3>Year: {{movie.Year}}</h3>
+        <h3>Director: {{movie.Director}}</h3>
+        <h3>Runtime: {{movie.Runtime}}</h3>
+    </div>
+  </div>
+
+  <div class="plot-info" ng-show="movie">
+    <h3>{{movie.Plot}}</h3>
+  </div>
+
+
+
+    <span class="generate-button" ng-click="generate()">Generate random movie</span>
+  </body>
+</html>

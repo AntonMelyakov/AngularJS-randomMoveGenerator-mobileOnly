@@ -23,7 +23,6 @@ var MainCtrl = function($scope, $http) {
   };
 
 
-
   $scope.generate = function() {
     var randomNumber = Math.floor((Math.random() * movies.length));
     $http.get("http://www.omdbapi.com/?t=" + movies[randomNumber])
